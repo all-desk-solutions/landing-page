@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AllDeskSolutions - Premium co-working spaces in Pune, Maharashtra. Private cabins, hot desks, and professional workspaces. Grow with us!">
+    <meta name="description"
+        content="AllDeskSolutions - Premium co-working spaces in Pune, Maharashtra. Private cabins, hot desks, and professional workspaces. Grow with us!">
     <title>AllDeskSolutions | Co-Working Space in Pune - Private Cabins & Hot Desks</title>
-    
+
     <style>
         :root {
-            --primary: #3b5cff;        /* Calm, confident blue */
-            --primary-dark: #2f46c8;   /* Real depth for hover/focus */
-            --primary-soft: #eef2ff;   /* Subtle backgrounds, chips */
+            --primary: #3b5cff;
+            /* Calm, confident blue */
+            --primary-dark: #2f46c8;
+            /* Real depth for hover/focus */
+            --primary-soft: #eef2ff;
+            /* Subtle backgrounds, chips */
 
             /* Secondary (Structure, not attention) */
-            --secondary: #334155;        /* Slate — authority, balance */
+            --secondary: #334155;
+            /* Slate — authority, balance */
             --secondary-hover: #1e293b;
 
             /* Status Colors (muted, trustworthy) */
@@ -22,9 +28,12 @@
             --danger: #dc2626;
 
             /* Text */
-            --text: #0f172a;          /* Strong, executive-level contrast */
-            --text-light: #64748b;    /* Calm secondary text */
-            --text-muted: #94a3b8;    /* Meta / helper text */
+            --text: #0f172a;
+            /* Strong, executive-level contrast */
+            --text-light: #64748b;
+            /* Calm secondary text */
+            --text-muted: #94a3b8;
+            /* Meta / helper text */
 
             /* Backgrounds */
             --bg: #ffffff;
@@ -42,7 +51,7 @@
             --shadow-lg: 0 24px 48px rgba(15, 23, 42, 0.12);
 
         }
-        
+
         * {
             margin: 0;
             padding: 0;
@@ -61,7 +70,10 @@
             background: var(--bg);
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             line-height: 1.2;
             font-weight: 700;
         }
@@ -80,7 +92,7 @@
             right: 0;
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
             z-index: 1000;
             padding: 16px 0;
         }
@@ -139,6 +151,7 @@
             object-fit: contain;
             border-radius: 6px;
         }
+
         .nav-links {
             display: flex;
             list-style: none;
@@ -203,8 +216,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.85), rgba(30, 64, 175, 0.8)), 
-                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.85), rgba(30, 64, 175, 0.8)),
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
             color: white;
             padding: 200px 0 120px;
             text-align: center;
@@ -380,7 +393,7 @@
             margin-bottom: 8px;
             color: var(--primary);
         }
-        
+
         .service-price-tag {
             display: inline-block;
             background: var(--primary-soft);
@@ -745,7 +758,7 @@
             text-decoration: none;
             font-size: 24px;
             transition: all 0.3s;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         .float-btn.phone {
@@ -987,7 +1000,19 @@
             }
         }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3TDQYP0D8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L3TDQYP0D8');
+    </script>
+
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -1001,11 +1026,26 @@
                     </div>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#services">Spaces</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://wa.me/919404339386" class="btn">Get in Touch</a></li>
+                    <li><a href="#services" onclick="gtag('event', 'anchor_click', {
+                      'event_category': 'navigation',
+                      'event_label': 'Spaces'
+                    });">Spaces</a></li>
+                    <li><a href="#gallery" onclick="gtag('event', 'anchor_click', {
+                      'event_category': 'navigation',
+                      'event_label': 'Gallery'
+                    });">Gallery</a></li>
+                    <li><a href="#about" onclick="gtag('event', 'anchor_click', {
+                      'event_category': 'navigation',
+                      'event_label': 'About'
+                    });">About</a></li>
+                    <li><a href="#contact" onclick="gtag('event', 'anchor_click', {
+                      'event_category': 'Contact',
+                      'event_label': 'About'
+                    });">Contact</a></li>
+                    <li><a href="https://wa.me/919404339386" class="btn" onclick="gtag('event', 'anchor_click', {
+                      'event_category': 'navigation',
+                      'event_label': 'Get in Touch'
+                    });">Get in Touch</a></li>
                 </ul>
                 <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
             </div>
@@ -1025,9 +1065,11 @@
             <div class="hero-content">
                 <div class="badge">✓ Premium co-working spaces in Pune</div>
                 <h1>Your Professional<br>Workspace Awaits</h1>
-                <p>Flexible, fully-furnished co-working spaces designed for entrepreneurs, freelancers, and teams. Grow your business with us.</p>
+                <p>Flexible, fully-furnished co-working spaces designed for entrepreneurs, freelancers, and teams. Grow
+                    your business with us.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-large" onclick="openWhatsApp('Hello! I am interested in your co-working spaces.')">💬 WhatsApp Us</a>
+                    <a href="#" class="btn btn-large"
+                        onclick="openWhatsApp('Hello! I am interested in your co-working spaces.')">💬 WhatsApp Us</a>
                     <a href="#contact" class="btn btn-outline btn-large">📅 Book a Tour</a>
                 </div>
                 <div class="trust-badges">
@@ -1070,7 +1112,8 @@
                     <div class="service-icon">🚪</div>
                     <h3>Private Cabin</h3>
                     <div class="service-price-tag">₹800 / day &nbsp;|&nbsp; ₹100 / hour</div>
-                    <p>Ideal for small teams of 3 users. Fully furnished, lockable cabin for focused and confidential work.</p>
+                    <p>Ideal for small teams of 3 users. Fully furnished, lockable cabin for focused and confidential
+                        work.</p>
                     <ul>
                         <li>Fully Furnished private, lockable cabin for focused work</li>
                         <li>High-Speed WIFI with uninterrupted connectivity</li>
@@ -1081,7 +1124,8 @@
                 <div class="service-card">
                     <div class="service-icon">💺</div>
                     <h3>Hot Desk / Day Pass</h3>
-                    <p>Cost-effective workspace by the day. Book a seat for just ₹250/day with no long-term commitments.</p>
+                    <p>Cost-effective workspace by the day. Book a seat for just ₹250/day with no long-term commitments.
+                    </p>
                     <ul>
                         <li>Cost-effective option compared to private cabin</li>
                         <li>No long-term commitments</li>
@@ -1092,7 +1136,8 @@
                 <div class="service-card">
                     <div class="service-icon">🌐</div>
                     <h3>Networking Hub</h3>
-                    <p>Connect with entrepreneurs, freelancers, and professionals from various industries in our thriving community.</p>
+                    <p>Connect with entrepreneurs, freelancers, and professionals from various industries in our
+                        thriving community.</p>
                     <ul>
                         <li>Community Events</li>
                         <li>Collaboration Spaces</li>
@@ -1187,8 +1232,8 @@
                         <li>Battery backup & WIFI connection</li>
                         <li>Free Ample parking</li>
                         <li>
-                          <strong>Private Cabin Access (Limited Hours):</strong> 
-                             24 Hours per Month (approximately 48 minutes per day).
+                            <strong>Private Cabin Access (Limited Hours):</strong>
+                            24 Hours per Month (approximately 48 minutes per day).
                         </li>
                     </ul>
                     <a href="https://wa.me/919404339386" class="btn btn-large">Book Now</a>
@@ -1206,8 +1251,8 @@
                         <li>Battery backup & WIFI connection</li>
                         <li>Free Ample parking</li>
                         <li>
-                          <strong>Private Cabin Access (Limited Hours):</strong> 
-                             48 hours per month (approximately 1 hour and 36 minutes per day).
+                            <strong>Private Cabin Access (Limited Hours):</strong>
+                            48 hours per month (approximately 1 hour and 36 minutes per day).
                         </li>
                     </ul>
                     <a href="https://wa.me/919404339386" class="btn btn-large">Book Now</a>
@@ -1225,8 +1270,13 @@
                 </div>
                 <div class="about-content">
                     <h2>About AllDeskSolutions</h2>
-                    <p>Located in the heart of Hinjewadi Phase 1, AllDeskSolutions is your premium co-working destination in Pune. With just over a year of experience, we've established ourselves as a trusted choice for entrepreneurs, freelancers, and growing businesses. Licensed under Shop Act, we ensure compliance and professionalism in all our operations.</p>
-                    <p>Our mission is simple: Provide flexible, professional workspaces that foster growth, collaboration, and success. We create an environment where professionals can thrive and networks flourish.</p>
+                    <p>Located in the heart of Hinjewadi Phase 1, AllDeskSolutions is your premium co-working
+                        destination in Pune. With just over a year of experience, we've established ourselves as a
+                        trusted choice for entrepreneurs, freelancers, and growing businesses. Licensed under Shop Act,
+                        we ensure compliance and professionalism in all our operations.</p>
+                    <p>Our mission is simple: Provide flexible, professional workspaces that foster growth,
+                        collaboration, and success. We create an environment where professionals can thrive and networks
+                        flourish.</p>
                     <ul class="feature-list">
                         <li>Fully Furnished Spaces</li>
                         <li>High-Speed Connectivity</li>
@@ -1276,10 +1326,10 @@
                 <div class="contact-form-wrapper">
                     <h3>Book a Tour</h3>
                     <form onsubmit="handleSubmit(event)">
-                            <div class="form-group">
-                                <label class="form-label">Your Name</label>
-                                <input name="name" type="text" class="form-control" required>
-                            </div>
+                        <div class="form-group">
+                            <label class="form-label">Your Name</label>
+                            <input name="name" type="text" class="form-control" required>
+                        </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label">Email</label>
@@ -1292,11 +1342,13 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label">Interested In</label>
-                            <input name="interest" type="text" class="form-control" placeholder="e.g., Private Cabin, Hot Desk...">
+                            <input name="interest" type="text" class="form-control"
+                                placeholder="e.g., Private Cabin, Hot Desk...">
                         </div>
                         <div class="form-group">
                             <label class="form-label">Message</label>
-                            <textarea name="message" class="form-control" placeholder="Tell us about your workspace needs..." required></textarea>
+                            <textarea name="message" class="form-control"
+                                placeholder="Tell us about your workspace needs..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-large">Send Inquiry</button>
                     </form>
@@ -1310,7 +1362,8 @@
         <div class="container">
             <h2>Ready to Grow Your Business?</h2>
             <p>Join our thriving community of entrepreneurs and professionals. Get in touch today!</p>
-            <a href="https://wa.me/919404339386" class="btn btn-large" style="background: white; color: var(--primary);">WhatsApp Us Now</a>
+            <a href="https://wa.me/919404339386" class="btn btn-large"
+                style="background: white; color: var(--primary);">WhatsApp Us Now</a>
         </div>
     </section>
 
@@ -1332,10 +1385,13 @@
                             <span class="logo-tagline">Grow With Us</span>
                         </div>
                     </div>
-                    <p>Premium co-working spaces in Pune. Flexible, professional workspaces designed for entrepreneurs and growing teams.</p>
+                    <p>Premium co-working spaces in Pune. Flexible, professional workspaces designed for entrepreneurs
+                        and growing teams.</p>
                     <div class="footer-social">
-                        <a href="https://www.linkedin.com/in/alldesk-solutions/" class="social-btn" title="LinkedIn">In</a>
-                        <a href="https://www.instagram.com/alldesksolutions/" class="social-btn" title="Instagram">📷</a>
+                        <a href="https://www.linkedin.com/in/alldesk-solutions/" class="social-btn"
+                            title="LinkedIn">In</a>
+                        <a href="https://www.instagram.com/alldesksolutions/" class="social-btn"
+                            title="Instagram">📷</a>
                         <a href="https://wa.me/919404339386" class="social-btn" title="Message on WhatsApp">💬</a>
                     </div>
                 </div>
@@ -1346,6 +1402,7 @@
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="privacy.html" target="_blank">Privacy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -1366,12 +1423,13 @@
                     </ul>
                 </div>
             </div>
-            
+
             <!-- UPDATED FOOTER BOTTOM -->
             <div class="footer-bottom">
                 <div class="bottom-content">
                     <p>&copy; 2026 AllDeskSolutions. All Rights Reserved.</p>
-                    <p class="branding-line">Made with ❤️ by <a href="https://lonarx.us/" target="_blank">lonarx.us</a></p>
+                    <p class="branding-line">Made with ❤️ by <a href="https://lonarx.us/" target="_blank">lonarx.us</a>
+                    </p>
                 </div>
             </div>
 
@@ -1392,18 +1450,25 @@
 
         function handleSubmit(event) {
             event.preventDefault();
+
+            // Google Analytics event tracking
+            gtag('event', 'form_submit', {
+                'event_category': 'lead',
+                'event_label': 'Contact Form'
+            });
+
             const form = event.target;
-            const formData = new FormData(form);
-            
+            const formData = new FormData(form);            
+
             let message = 'Contact Form Submission:\n';
             formData.forEach((value, key) => {
                 message += `${key}: ${value}\n`;
             });
-            
+
             const phone = '919404339386';
             const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
-            
+
             form.reset();
         }
 
@@ -1415,4 +1480,5 @@
         });
     </script>
 </body>
+
 </html>
